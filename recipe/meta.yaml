@@ -1,4 +1,4 @@
-{% set version = '0.4.0' %}
+{% set version = "0.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/latex2exp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/latex2exp/latex2exp_{{ version }}.tar.gz
-  sha256: fc03bfa663231b60e1edace7b3001a7eb395b4ca468c6a983673845ddd63cb8a
+  sha256: 6f3b3e6c543aaee5617a8890c272c1f3e08a88754892e4f3d27f71fe0fbf7662
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1003
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -41,12 +41,10 @@ test:
 about:
   home: http://github.com/stefano-meschiari/latex2exp
   license: MIT
-  summary: Parses and converts LaTeX math formulas to R's plotmath expressions, used to enter
-    mathematical formulas and symbols to be rendered as text, axis labels, etc. throughout
-    R's plotting system.
+  summary: Parses and converts LaTeX math formulas to R's plotmath expressions, used to enter mathematical formulas and symbols to be rendered as text, axis labels, etc. throughout R's plotting system.
   license_family: MIT
-  license_file: 
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
