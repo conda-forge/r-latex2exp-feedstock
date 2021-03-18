@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: latex2exp_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/latex2exp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/latex2exp/latex2exp_{{ version }}.tar.gz
   sha256: 6f3b3e6c543aaee5617a8890c272c1f3e08a88754892e4f3d27f71fe0fbf7662
 
 build:
-  noarch: generic
   merge_build_host: true  # [win]
   number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,10 +49,4 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
     - apcamargo
