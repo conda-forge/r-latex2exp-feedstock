@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.9.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/latex2exp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/latex2exp/latex2exp_{{ version }}.tar.gz
-  sha256: e61765d01e8d252c0c839214938b61bf3bf04d11e60e1f3dec32e8e697efd141
+  sha256: d03208eda8a0f6f91f41e11864bc12d6d39e02cac334364ac4f05018ce5272e4
 
 build:
   merge_build_host: true  # [win]
