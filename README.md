@@ -1,11 +1,11 @@
-About r-latex2exp
-=================
+About r-latex2exp-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-latex2exp-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/stefano-meschiari/latex2exp
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-latex2exp-feedstock/blob/main/LICENSE.txt)
 
 Summary: Parses and converts LaTeX math formulas to R's plotmath expressions, used to enter mathematical formulas and symbols to be rendered as text, axis labels, etc. throughout R's plotting system.
 
