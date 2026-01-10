@@ -1,4 +1,4 @@
-{% set version = "0.9.6" %}
+{% set version = "0.9.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/latex2exp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/latex2exp/latex2exp_{{ version }}.tar.gz
-  sha256: 669826a433a1d815c9164ffcb69d7d634857be905e3c8c04f464cf1221a0e0ca
+  sha256: 8dd641f263989515d0c327550934e4954dc582230ca2bb9f280b6b28a46510a5
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
